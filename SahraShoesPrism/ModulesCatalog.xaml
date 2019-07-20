@@ -1,0 +1,17 @@
+﻿<Modularity:ModuleCatalog
+    xmlns:Modularity="clr-namespace:Prism.Modularity;assembly=Prism.Wpf"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SahraShoesPrism"
+    >
+
+    <Modularity:ModuleInfoGroup
+        Ref="file://192.168.1.41/Share/SahraShoes/Modules/TestModule.dll">
+        <Modularity:ModuleInfo
+            InitializationMode="OnDemand"
+            ModuleName="TestModule"
+            ModuleType="TestModule.TestModuleModule, TestModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+            />
+    </Modularity:ModuleInfoGroup>
+
+</Modularity:ModuleCatalog>

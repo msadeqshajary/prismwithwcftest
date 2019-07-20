@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SharedLib" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SharedLib" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfStockTaqeh">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StockTaqeh" nillable="true" type="tns:StockTaqeh" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStockTaqeh" nillable="true" type="tns:ArrayOfStockTaqeh" />
+  <xs:complexType name="StockTaqeh">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" type="xs:int" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:float" />
+      <xs:element minOccurs="0" name="Reserve" type="xs:float" />
+      <xs:element minOccurs="0" name="Taqeh" nillable="true" type="tns:Taqeh" />
+      <xs:element minOccurs="0" name="TaqehId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StockTaqeh" nillable="true" type="tns:StockTaqeh" />
+  <xs:complexType name="Taqeh">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aj" nillable="true" type="tns:Stuff" />
+      <xs:element minOccurs="0" name="AjId" type="xs:int" />
+      <xs:element minOccurs="0" name="BackColor" nillable="true" type="tns:Stuff" />
+      <xs:element minOccurs="0" name="BackColorId" type="xs:int" />
+      <xs:element minOccurs="0" name="Brightness" nillable="true" type="tns:Stuff" />
+      <xs:element minOccurs="0" name="BrightnessId" type="xs:int" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GetLaminetStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GetRecognizableName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="LType" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Parche" nillable="true" type="tns:Stuff" />
+      <xs:element minOccurs="0" name="ParcheId" type="xs:int" />
+      <xs:element minOccurs="0" name="Producer" nillable="true" type="tns:Stuff" />
+      <xs:element minOccurs="0" name="ProducerId" type="xs:int" />
+      <xs:element minOccurs="0" name="Thickness" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Taqeh" nillable="true" type="tns:Taqeh" />
+  <xs:complexType name="Stuff">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aj" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BackColor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Brightness" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Color" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Hardness" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Parche" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Producer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Thickness" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" type="xs:int" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str3" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Stuff" nillable="true" type="tns:Stuff" />
+  <xs:complexType name="ArrayOfPofak">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pofak" nillable="true" type="tns:Pofak" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPofak" nillable="true" type="tns:ArrayOfPofak" />
+  <xs:complexType name="Pofak">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Color" nillable="true" type="tns:Stuff" />
+      <xs:element minOccurs="0" name="ColorId" type="xs:int" />
+      <xs:element minOccurs="0" name="GetRecognizableName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Glue" type="xs:float" />
+      <xs:element minOccurs="0" name="Grade" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Thickness" type="xs:float" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="tns:Stuff" />
+      <xs:element minOccurs="0" name="TypeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pofak" nillable="true" type="tns:Pofak" />
+  <xs:complexType name="ArrayOfStockPofak">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StockPofak" nillable="true" type="tns:StockPofak" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStockPofak" nillable="true" type="tns:ArrayOfStockPofak" />
+  <xs:complexType name="StockPofak">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Pofak" nillable="true" type="tns:Pofak" />
+      <xs:element minOccurs="0" name="PofakId" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" type="xs:int" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:float" />
+      <xs:element minOccurs="0" name="Reserve" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StockPofak" nillable="true" type="tns:StockPofak" />
+  <xs:complexType name="ArrayOfTaqeh">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Taqeh" nillable="true" type="tns:Taqeh" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaqeh" nillable="true" type="tns:ArrayOfTaqeh" />
+  <xs:complexType name="ArrayOfLaminetOperation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LaminetOperation" nillable="true" type="tns:LaminetOperation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLaminetOperation" nillable="true" type="tns:ArrayOfLaminetOperation" />
+  <xs:complexType name="LaminetOperation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Astar" nillable="true" type="tns:Taqeh" />
+      <xs:element minOccurs="0" name="AstarId" type="xs:int" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Confirmer" nillable="true" type="tns:Users" />
+      <xs:element minOccurs="0" name="ConfirmerId" type="xs:int" />
+      <xs:element minOccurs="0" name="CreatedTaqeh" nillable="true" type="tns:Taqeh" />
+      <xs:element minOccurs="0" name="CreatedTaqehId" type="xs:int" />
+      <xs:element minOccurs="0" name="GetLaminetType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GetOrderDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GetReceiveDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GetSentDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GetStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="OrderDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Pofak" nillable="true" type="tns:Pofak" />
+      <xs:element minOccurs="0" name="PofakId" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" type="xs:int" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+      <xs:element minOccurs="0" name="ReceiveDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReceivedQuantity" type="xs:int" />
+      <xs:element minOccurs="0" name="Receiver" nillable="true" type="tns:Users" />
+      <xs:element minOccurs="0" name="ReceiverId" type="xs:int" />
+      <xs:element minOccurs="0" name="SendDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Sender" nillable="true" type="tns:Users" />
+      <xs:element minOccurs="0" name="SenderId" type="xs:int" />
+      <xs:element minOccurs="0" name="Shortage" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Taqeh" nillable="true" type="tns:Taqeh" />
+      <xs:element minOccurs="0" name="TaqehId" type="xs:int" />
+      <xs:element minOccurs="0" name="Type" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="tns:Users" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LaminetOperation" nillable="true" type="tns:LaminetOperation" />
+  <xs:complexType name="Users">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BirthDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HireDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="tns:Stuff" />
+      <xs:element minOccurs="0" name="RoleId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Users" nillable="true" type="tns:Users" />
+</xs:schema>
